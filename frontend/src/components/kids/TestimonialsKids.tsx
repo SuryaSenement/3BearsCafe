@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Updated testimonials data to match the design
 const testimonials = [
   {

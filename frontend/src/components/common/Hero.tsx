@@ -1,8 +1,6 @@
-import { Star, Heart, Plus, ShoppingCart } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Star, ShoppingCart } from 'lucide-react';
 import cupImage from '../../assets/Food/nameless-3791-5nYLHK68TLM-unsplash.jpg';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import heroBg from '../../assets/Designs/rectangle.png';
 import icedtea from '../../assets/Food/0J3A6052.jpg';
 
@@ -64,45 +62,6 @@ const heroSlides = [
     image: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600",
   }
 ];
-
-const defaultProducts = [
-  {
-    id: 1,
-    name: "Vanilla Latte",
-    price: "210",
-    image: "https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=800",
-    rating: 4.8,
-    isHot: true
-  },
-  {
-    id: 2,
-    name: "Espresso",
-    price: "125",
-    image:
-      "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800",
-    rating: 4.8,
-    isHot: true,
-  },
-  {
-    id: 3,
-    name: "Hazelnut Latte",
-    price: "230",
-    image:
-      "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800",
-    rating: 4.8,
-    isIced: true,
-  },
-  {
-    id: 4,
-    name: "Hazelnut Latte",
-    price: "230",
-    image:
-      "https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=800",
-    rating: 4.8,
-    isIced: true,
-  },
-];
-
 
 const Hero = () => {
 

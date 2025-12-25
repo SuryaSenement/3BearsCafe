@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import KidsHeader from '../../components/kids/KidsHeader';
 import KidsFooter from '../../components/kids/KidsFooter';
-import { Calendar, Clock, Users, Star, ExternalLink, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, Users, Star, ExternalLink } from 'lucide-react';
 import { getEvents } from "../../services/events.service";
 import type { EventItem } from "../../types";
 

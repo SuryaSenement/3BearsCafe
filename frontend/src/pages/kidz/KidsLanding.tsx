@@ -1,4 +1,3 @@
-import React from 'react';
 import KidsHeader from '../../components/kids/KidsHeader';
 import KidsHero from '../../components/kids/KidsHero';
 import ActivitiesSection from '../../components/kids/ActivitiesSection';

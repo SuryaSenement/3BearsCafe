@@ -1,4 +1,3 @@
-import React from 'react';
 import tdimg from '../../assets/Kidz/3dpic.png';
 import tdimg1 from '../../assets/Kidz/3dpic1.png';
 import tdimg2 from '../../assets/Kidz/3dpic2.png';

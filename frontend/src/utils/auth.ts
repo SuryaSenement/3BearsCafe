@@ -47,28 +47,27 @@ export const getCurrentUser = (): any | null => {
  * Make authenticated API request
  */
 export const makeAuthenticatedRequest = async (
-  url: string, 
+  url: string,
   options: RequestInit = {}
 ): Promise<Response> => {
   const token = getAuthToken();
-  
+
   if (!token) {
     throw new Error('No authentication token found');
   }
 
-  const headers = {
-    ...options.headers,
-    'Authorization': `Bearer ${token}`
-  };
+  // Normalize headers to a Headers instance to avoid type issues with string keys.
+  const headers = new Headers(options.headers as HeadersInit);
+  headers.set('Authorization', `Bearer ${token}`);
 
   // Don't add Content-Type for FormData (multipart/form-data)
   if (!(options.body instanceof FormData)) {
-    headers['Content-Type'] = 'application/json';
+    headers.set('Content-Type', 'application/json');
   }
 
   return fetch(url, {
     ...options,
-    headers
+    headers,
   });
 };
 
