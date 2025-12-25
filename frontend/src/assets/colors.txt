@@ -1,0 +1,22 @@
+-> Primary Colours
+
+#502B14 - Brown
+
+#FFF8F4 - OffWhite
+
+
+#B73B26 - Orange
+
+-> MonoChrome Colours
+
+#142718 - Black
+
+
+
+-> Secondary Colours
+
+#656D58 - Olive
+
+#C3C1B6 - GreyFade
+
+#A5704D - Latte Colour

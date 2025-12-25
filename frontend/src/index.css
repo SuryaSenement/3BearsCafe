@@ -1,0 +1,99 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+@import "tailwindcss";
+/* @import "tailwindcss"; */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+/* import Poppins from './assets/Fonts/Poppins-Regular.ttf'; */
+
+/* Load local primary font - use relative path from src/ */
+@font-face {
+  font-family: 'Something New';
+  src: url('./assets/Fonts/Something New Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@layer utilities {
+  .font-primary {
+    font-family: 'Something New', system-ui, sans-serif !important;
+  }
+}
+body,
+button,
+a,
+input,
+select,
+textarea {
+  cursor: url('./assets/Designs/browncursor.png') 16 16, auto !important;
+}
+
+body:active,
+button:active,
+a:active,
+input:active,
+select:active,
+textarea:active {
+  cursor: url('./assets/Designs/brownclick.png') 16 16, auto !important;
+}
+
+/* Poppins comes from Google Fonts link in index.html */
+
+@layer base {
+  html, body {
+    font-family: 'Poppins', system-ui, sans-serif; /* DEFAULT FONT */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+
+/* Global styles to prevent white space issues */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Ensure no horizontal overflow */
+.no-overflow {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.double-border {
+  position: relative;
+  border: 2px solid #502B14; /* outer border color */
+  border-radius: 16px;
+  overflow: visible;
+}
+
+.double-border::after {
+  content: "";
+  position: absolute;
+  inset: 3px;                 /* distance between borders */
+  pointer-events: none;
+  border: 2px solid rgba(165,112,77,0.9); /* inner border (latte) */
+  border-radius: 12px;
+}
