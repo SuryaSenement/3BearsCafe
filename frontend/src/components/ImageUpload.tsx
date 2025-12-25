@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { Upload, X, Check, AlertCircle, Image as ImageIcon } from 'lucide-react';
-import { makeAuthenticatedRequest, handleAuthError, getAuthToken } from '../../../PreviousCode/src/utils/auth';
+import { makeAuthenticatedRequest, handleAuthError, getAuthToken } from '../utils/auth';
 
 interface ImageUploadProps {
   onImageUpload: (imageUrl: string) => void;

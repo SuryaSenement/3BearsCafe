@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import CafeHome from "./pages/cafe/Cafehome";
@@ -12,14 +11,7 @@ import Login from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard";
 import { useAuth } from "./hooks/useAuth";
 
-import Header from "./components/common/Header";
-import Hero from "./components/common/Hero";
-import PopularProducts from "./components/cafe/PopularProducts";
-import QualitySection from "./components/cafe/QualitySection";
-import AboutSection from "./sections/AboutSection";
-import MenuSection from "./components/cafe/MenuSection";
-import TestimonialsSection from "./components/cafe/TestimonialsSection";
-import Footer from "./components/common/Footer";
+// Note: top-level common components are used inside `CafeHome` and other pages.
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { user, loading } = useAuth();
